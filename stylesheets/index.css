@@ -5,6 +5,7 @@ html{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
     text-transform: uppercase;
+    letter-spacing: 10px;
 }
 .container{
     display: flex;
@@ -14,13 +15,12 @@ html{
     padding: 10px;
     width: 50%;
     margin: auto;
-    
 }
+
 .date{
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
-    
 }
 
 #day, #month {
@@ -31,4 +31,8 @@ html{
 #goal{
     flex-grow: 1;
     /* border: 5px green dashed; */
+}
+
+.text{
+    letter-spacing: 3px;
 }
