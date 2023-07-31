@@ -9,7 +9,7 @@ html{
 }
 .container{
     display: flex;
-    align-items: center;
+    
     
     border: 5px black double;
     padding: 10px;
@@ -38,8 +38,11 @@ html{
 }
 
 #schedule {
-    border: 5px red double;
+    /* border: 5px red double; */
     width: 30%;
+    height: auto;
+    margin: 2px;
+    
 }
 
 #schedule p {
@@ -50,4 +53,23 @@ html{
     list-style: none;
     padding-bottom: 5px;
     column-gap: 10px;
+    padding-right: 10px;
+}
+
+#to-do-notes-parent {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px green solid; */
+    width: 70%;
+    
+    margin-left: 10px;
+    
+
+}
+
+#to-do-list, #notes {
+    border: 1px black solid;
+    height: 50%;
+    margin: 2px;
+    
 }
