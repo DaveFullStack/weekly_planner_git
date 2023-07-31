@@ -59,17 +59,31 @@ html{
 #to-do-notes-parent {
     display: flex;
     flex-direction: column;
-    /* border: 1px green solid; */
     width: 70%;
-    
     margin-left: 10px;
-    
-
 }
 
 #to-do-list, #notes {
     border: 1px black solid;
     height: 50%;
     margin: 2px;
+    display: flex;
+    flex-direction: column;
     
+    
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr;
+    flex-grow: 1;
+    border-spacing: 5px;;
+    
+}
+
+.grid-item {
+    border: 1px black solid;
+    
+
 }
