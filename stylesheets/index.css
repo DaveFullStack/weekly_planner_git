@@ -36,3 +36,18 @@ html{
 .text{
     letter-spacing: 3px;
 }
+
+#schedule {
+    border: 5px red double;
+    width: 30%;
+}
+
+#schedule p {
+    padding-left: 8%;
+}
+
+#schedule li{
+    list-style: none;
+    padding-bottom: 5px;
+    column-gap: 10px;
+}
