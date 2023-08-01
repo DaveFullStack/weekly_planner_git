@@ -17,21 +17,64 @@ html{
     margin: auto;
 }
 
-.date{
+.date-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid green;
+    width: 100%;
+    justify-content: space-between;
+    
+    
+}
+
+.date-content {
+    display: flex;
+    align-items: center;
+    border: 1px solid red;
+    width: 100%;
+    flex: 1;
+    
+}
+.date-content:last-child {
+    flex: 2;
+    
+}
+.date-content:last-child p {
+    flex-grow: 3;
+}
+.date-text-input {
+    
+    border-bottom: 1px solid black;
+    width: 100%;
+    content-visibility: hidden;
+    padding-top: 10px;
+    
+}
+
+
+
+
+/* .date{
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
-}
+} */
+/* .date-item {
+    border: 1px black solid;
+} */
 
-#day, #month {
-    padding-right: 30px;;
-    /* border: 5px green dashed; */
-}
+/* #day, #month {
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    border: 5px green dashed;
 
-#goal{
+} */
+
+/* #goal{
     flex-grow: 1;
-    /* border: 5px green dashed; */
-}
+    
+} */
 
 .text{
     letter-spacing: 3px;
