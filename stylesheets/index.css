@@ -46,14 +46,27 @@ html{
 }
 
 #schedule p {
-    padding-left: 8%;
+    padding-left: 0px;
 }
 
-#schedule li{
+/* #schedule li{
     list-style: none;
     padding-bottom: 5px;
     column-gap: 10px;
     padding-right: 10px;
+} */
+
+.schedule-grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+
+}
+
+.schedule-item {
+    border-bottom: 1px black solid;
+    height: 37px;
+    margin-bottom: 5px;
 }
 
 #to-do-notes-parent {
@@ -78,12 +91,21 @@ html{
     grid-template-columns: 1fr 1fr;
     grid-auto-rows: 1fr;
     flex-grow: 1;
-    border-spacing: 5px;;
+    column-gap: 1px;
+    row-gap: 1px;
+    padding: 1px;
+    
+    
     
 }
 
 .grid-item {
     border: 1px black solid;
+    content-visibility: hidden;
     
 
+}
+
+#to-do-title, #notes-title {
+    padding-left: 10px;
 }
