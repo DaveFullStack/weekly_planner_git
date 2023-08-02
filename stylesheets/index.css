@@ -8,8 +8,6 @@ html{
     letter-spacing: 10px;
 }
 .container{
-    display: flex;
-    
     
     border: 5px black double;
     padding: 10px;
@@ -17,10 +15,16 @@ html{
     margin: auto;
 }
 
-.date-container {
+.section-two-container {
     display: flex;
+}
+
+.date-container {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
-    border: 1px solid green;
+    
     width: 100%;
     justify-content: space-between;
     
@@ -29,59 +33,31 @@ html{
 
 .date-content {
     display: flex;
-    align-items: center;
-    border: 1px solid red;
     width: 100%;
-    flex: 1;
-    
+    flex-grow: 1;
 }
-.date-content:last-child {
-    flex: 2;
-    
+
+.goal-container{
+    display: flex;
+    flex-direction: column;
 }
-.date-content:last-child p {
-    flex-grow: 3;
-}
+
 .date-text-input {
     
     border-bottom: 1px solid black;
     width: 100%;
+    margin: 3px;
     content-visibility: hidden;
-    padding-top: 10px;
+    
     
 }
-
-
-
-
-/* .date{
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
-} */
-/* .date-item {
-    border: 1px black solid;
-} */
-
-/* #day, #month {
-    padding-right: 30px;
-    display: flex;
-    flex-direction: column;
-    border: 5px green dashed;
-
-} */
-
-/* #goal{
-    flex-grow: 1;
-    
-} */
 
 .text{
     letter-spacing: 3px;
 }
 
 #schedule {
-    /* border: 5px red double; */
+    
     width: 30%;
     height: auto;
     margin: 2px;
@@ -91,13 +67,6 @@ html{
 #schedule p {
     padding-left: 0px;
 }
-
-/* #schedule li{
-    list-style: none;
-    padding-bottom: 5px;
-    column-gap: 10px;
-    padding-right: 10px;
-} */
 
 .schedule-grid-container {
     display: grid;
